@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फाइलहरूको सूची - अनुक्रमणिका</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mukta', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to the top of the container */
+            min-height: 100vh;
+            padding-top: 50px; /* Add some padding from the top */
+            box-sizing: border-box;
+        }
 
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            border-radius: 2px;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .file-list li {
+            background-color: #ecf0f1;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border-left: 5px solid #3498db;
+        }
+
+        .file-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .file-list li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.2em;
+            font-weight: 600;
+            flex-grow: 1; /* Allow link to take available space */
+        }
+
+        .file-list li a:hover {
+            color: #2980b9;
+        }
+
+        .file-list li .icon {
+            margin-right: 15px;
+            color: #3498db;
+            font-size: 1.5em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .file-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 15px;
+            }
+
+            .file-list li .icon {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>फाइलहरूको सूची</h1>
+        <ul class="file-list">
+            <li>
+                <span class="icon">&#128193;</span> <a href="https://github.dev/shakarbhattarai/shakarbhattarai.github.io/blob/main/%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%95%E0%A5%8B%20%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%A8%E0%A5%88%E0%A4%A4%E0%A4%BF%E0%A4%95%20%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A5%83%E0%A4%B6%E0%A5%8D%E0%A4%AF.html">monarchy_vs_republic.html</a>
+            </li>
+           
+        </ul>
+    </div>
+</body>
+</html>
